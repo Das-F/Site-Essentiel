@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/actualites.css" />
+    <title>Actualités - Site Essentiel - Artemis Lab</title>
+  </head>
+  <body>
+    <div class="website-banner">
+      <h2>Site Essentiel - Artemis Lab</h2>
+      <h3>Exemple de site pour une association sportive locale</h3>
+    </div>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="index.html" aria-label="Accueil - Club Sportif Val de Loire" class="logo">
+          <img src="assets/logo/logo-canoe-navbar.png" alt="Logo Club Sportif Val de Loire" />
+        </a>
+
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Accueil</a></li>
+          <li class="nav-item"><a href="actualites.html">Actualités</a></li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Actualités du club</h1>
+
+          <p>Retrouvez les événements, stages et dernières nouvelles du Club Sportif Val de Loire.</p>
+        </div>
+      </section>
+
+      <section class="news-section">
+        <div class="container">
+          <div class="news-grid">
+            <article class="news-card">
+                <a href="#">
+              <img src="assets/images/news-1.jpg" alt="Tournoi sportif" />
+              <div class="news-content">
+                <span class="news-date">12 mars 2026</span>
+                <h2>Tournoi régional ce week-end</h2>
+                <p>Notre club participera au tournoi régional organisé à Tours.</p>
+                <span>Lire l’article</span></a>
+              </div>
+            </article>
+
+            <article class="news-card">
+                 <a href="#">
+              <img src="assets/images/news-2.jpg" alt="Stage sportif" />
+              <div class="news-content">
+                <span class="news-date">4 avril 2026</span>
+                <h2>Ouverture des stages d’été</h2>
+                <p>Les inscriptions sont ouvertes pour les stages de perfectionnement.</p>
+                <span>Lire l’article</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <img src="assets/logo/logo-canoe-navbar.png" alt="Logo Club Sportif Val de Loire" />
+
+          <p>
+            Club Sportif Val de Loire<br />
+            Une association sportive conviviale ouverte à tous.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>contact@clubsportif.fr</p>
+          <p>06 00 00 00 00</p>
+          <p>Val de Loire</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook du club">
+              <img src="assets/social medias/Fb.png" alt="Icône Facebook" />
+            </a>
+
+            <a href="#" aria-label="Instagram du club">
+              <img src="assets/social medias/insta.png" alt="Icône Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Club Sportif Val de Loire — Site Essentiel Artemis Lab</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

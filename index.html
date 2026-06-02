@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Site Essentiel - Artemis Lab</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="website-banner">
+        <p>Site Essentiel - Artemis Lab</p>
+        <p>Exemple de site pour une association sportive locale</p>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html" aria-label="Accueil - Club Sportif Val de Loire" class="logo">
+        <img src="assets/logo/logo-canoe-navbar.png" alt="Logo Club Sportif Val de Loire" />
+      </a>
+
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Accueil</a></li>
+        <li class="nav-item"><a href="actualites.html">Actualités</a></li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <div class="hero-image">
+        <div class="overlay">
+          <img src="/assets/images/hero-logo-canoe-3.PNG" alt="Logo du club sportif Val de Loire" />
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Club Sportif Val de Loire</h1>
+
+        <h2>Bouger, progresser et partager ensemble</h2>
+
+        <div class="cta-section">
+          <div class="cta-text">
+            <p>Rejoignez une association sportive conviviale ouverte à tous les niveaux.</p>
+
+            <p>Que vous soyez débutant ou confirmé, notre club vous accompagne toute l’année dans une ambiance dynamique et bienveillante.</p>
+          </div>
+
+          <a href="contact.html" class="cta-button"> Nous contacter </a>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="container">
+          <h3>Qui sommes-nous ?</h3>
+          <p>Le Club Sportif Val de Loire est une association locale dédiée à la pratique sportive et au bien-être.</p>
+          <p>Depuis plusieurs années, nous proposons des activités accessibles à tous, dans un esprit de partage et de progression.</p>
+          <p>Notre objectif : permettre à chacun de pratiquer une activité physique régulière, tout en créant du lien et une vraie dynamique de groupe.</p>
+        </div>
+      </section>
+
+      <!-- ACTIVITIES -->
+      <section class="activities">
+        <div class="container">
+          <h3>Nos activités</h3>
+          <div class="activities-grid">
+            <div class="activity-card">
+              <h4>Entraînements collectifs</h4>
+              <p>Des séances encadrées pour progresser à votre rythme, dans une ambiance motivante.</p>
+            </div>
+            <div class="activity-card">
+              <h4>Évènements sportifs</h4>
+              <p>Participation à des tournois, rencontres et événements locaux tout au long de l’année.</p>
+            </div>
+            <div class="activity-card">
+              <h4>Stages de perfectionnement</h4>
+              <p>Des stages intensifs pour améliorer vos compétences et atteindre vos objectifs sportifs.</p>
+            </div>
+          </div>
+
+          <div class="activities-cta">
+            <span class="cta-text">Envie de nous rejoindre ou d’en savoir plus ?</span>
+
+            <a href="contact.html" class="cta-activity-button"> Contactez-nous </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery">
+        <div class="container">
+          <h3>Galerie</h3>
+          <div class="image-grid">
+            <img class="gallery-image" src="/assets/images/canoe-training.png" alt="Membres du club pendant un entraînement" />
+            <img class="gallery-image" src="/assets/images/canoe cup.png" alt="Activité sportive en extérieur" />
+            <img class="gallery-image" src="/assets/images/canoe-forum.png" alt="Événement sportif du club" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <img src="assets/logo/logo-canoe-navbar.png" alt="Logo Club Sportif Val de Loire" />
+
+          <p>
+            Club Sportif Val de Loire<br />
+            Une association sportive conviviale ouverte à tous.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>contact@clubsportif.fr</p>
+          <p>06 00 00 00 00</p>
+          <p>Val de Loire</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook du club">
+              <img src="assets/social medias/Fb.png" alt="Icône Facebook" />
+            </a>
+
+            <a href="#" aria-label="Instagram du club">
+              <img src="assets/social medias/insta.png" alt="Icône Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Club Sportif Val de Loire — Site Essentiel Artemis Lab</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
