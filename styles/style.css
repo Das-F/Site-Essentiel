@@ -162,7 +162,9 @@ section {
 }
 
 .cta-button:hover,
-.cta-button:focus-visible {
+.cta-button:focus-visible,
+.nav-contact:hover,
+.nav-contact:focus-visible {
   background-color: var(--primary);
   transform: scale(1.05);
 }
@@ -275,6 +277,49 @@ section {
 
 .image-card:hover .image-caption {
   transform: translateY(0);
+}
+
+/* Contact page */
+
+.contact {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus-visible {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
+.info {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* Footer */
