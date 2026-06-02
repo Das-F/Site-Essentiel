@@ -300,7 +300,7 @@ section {
 
 .contact-button {
   display: inline-block;
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: white;
   padding: 12px 30px;
   border-radius: 8px;
@@ -313,7 +313,7 @@ section {
 
 .contact-button:hover,
 .contact-button:focus-visible {
-  background-color: var(--primary);
+  background-color: var(--accent);
   transform: scale(1.05);
 }
 
